@@ -14,7 +14,7 @@ import { IconBaseProps } from 'react-icons';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;
-  icon: ComponentType<IconBaseProps>;
+  icon?: ComponentType<IconBaseProps>;
 }
 
 const Input = ({ name, icon: Icon, ...rest }: InputProps) => {
